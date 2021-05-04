@@ -4,6 +4,6 @@
 
 [x] After the ToyCard components are on the page, consider building out the functionality for the ToyForm.
 
-[] When you click on the `Donate to Goodwill` button, the ToyCard that you clicked on should be removed from the DOM as well as the backend.
+[x] When you click on the `Donate to Goodwill` button, the ToyCard that you clicked on should be removed from the DOM as well as the backend.
 
 [x] Clicking on the button should increase the number of likes on the DOM as well as the backend.

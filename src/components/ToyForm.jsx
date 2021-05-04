@@ -7,16 +7,23 @@ class ToyForm extends Component {
     image: ''
   }
 
+  // need to handle the input changes for both name and image
+  // this needs to go on both inputs, not just one
   handleChange = event => {
+    // set state so you can submit the final input
     this.setState({
+      // modular way of knowing which name and value pair
       [event.target.name]: event.target.value
     })
   }
 
+  // submit form, send data to callback function
   handleSubmit = event => {
     event.preventDefault()
     console.log('Submitting form...');
+    // make funciton on app.js
     this.props.postToyData(this.state)
+    // reset form so it doesn't have old inputs
     event.target.reset()
   }
 
